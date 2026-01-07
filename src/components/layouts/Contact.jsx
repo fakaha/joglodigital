@@ -1,7 +1,4 @@
 import React from 'react'
-import telephone from '../../assets/image/telephone.png'
-import mail from '../../assets/image/mail.png'
-import { ContactInfo } from '../elements/ContactInfo'
 
 export const Contact = () => {
   return (

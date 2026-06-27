@@ -10,7 +10,7 @@ export const Navbar = () => {
         </div>
         <ul className="flex gap-1 sm:gap-2">
           <li>
-            <a href='#' className="text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl py-1.5 px-3 sm:px-4 text-sm font-medium transition-all duration-300">
+            <a href='#root' className="text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl py-1.5 px-3 sm:px-4 text-sm font-medium transition-all duration-300">
               Beranda
             </a>
           </li>

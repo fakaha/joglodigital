@@ -1,9 +1,14 @@
 export const Button = (props) => {
     const { variant, font, children = '...', link, style, className = '' } = props
     
-    const baseStyle = "h-11 px-6 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 active:scale-95"
-    const defaultVariant = "bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-white shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] hover:scale-[1.03]"
-    const appliedVariant = variant || defaultVariant
+    const baseStyle = "h-10 px-5 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 active:scale-[0.98] text-sm"
+    
+    let appliedVariant = "bg-blue-600 text-white hover:bg-blue-700 shadow-sm"
+    if (variant === 'outline') {
+        appliedVariant = "border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300"
+    } else if (variant) {
+        appliedVariant = variant
+    }
 
     return (
         <button 
@@ -14,4 +19,5 @@ export const Button = (props) => {
             {children}
         </button>
     )
-}
+}
+

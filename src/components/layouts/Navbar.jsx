@@ -3,30 +3,33 @@ import logo from "../../assets/image/logo.png"
 
 export const Navbar = () => {
   return (
-    <div className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl z-50 bg-[#030014]/70 backdrop-blur-xl border border-white/10 rounded-2xl py-3.5 px-6 sm:px-8 shadow-[0_10px_30px_rgba(3,0,20,0.5)]">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <img className="h-[28px] hover:cursor-pointer hover:scale-105 transition-transform duration-300" src={logo} alt="Joglo Digital" />
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80 py-5 px-6 sm:px-10">
+      <div className="max-w-6xl mx-auto flex items-center justify-between">
+        <div className="flex items-center">
+          <img className="h-[26px] hover:cursor-pointer transition-opacity hover:opacity-90 duration-200" src={logo} alt="Joglo Digital" />
         </div>
-        <ul className="flex gap-1 sm:gap-2">
-          <li>
-            <a href='#root' className="text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl py-1.5 px-3 sm:px-4 text-sm font-medium transition-all duration-300">
-              Beranda
-            </a>
-          </li>
-          <li>
-            <a href="#kenapakami" className="text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl py-1.5 px-3 sm:px-4 text-sm font-medium transition-all duration-300">
-              Layanan
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="text-zinc-300 hover:text-white hover:bg-white/5 rounded-xl py-1.5 px-3 sm:px-4 text-sm font-medium transition-all duration-300">
-              Kontak
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul className="flex gap-2 sm:gap-4">
+            <li>
+              <a href='#root' className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200 py-1.5 px-3 rounded-md hover:bg-stone-200/60">
+                Beranda
+              </a>
+            </li>
+            <li>
+              <a href="#kenapakami" className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200 py-1.5 px-3 rounded-md hover:bg-stone-200/60">
+                Layanan
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200 py-1.5 px-3 rounded-md hover:bg-stone-200/60">
+                Kontak
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
+
 

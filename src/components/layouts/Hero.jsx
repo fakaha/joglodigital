@@ -4,56 +4,75 @@ import banner from '../../assets/image/bannerhero.webp'
 
 export const Hero = () => {
   return (
-    <div className='relative px-4 pt-44 pb-28 text-center min-h-screen flex flex-col justify-center items-center overflow-hidden bg-[#030014]'>
-      {/* Hero Background Image with futuristic overlay */}
+    <div className='relative px-6 pt-52 pb-32 text-center min-h-screen flex flex-col justify-center items-center overflow-hidden bg-[#f4f5f8]'>
+      {/* Hero Background Image - highly subtle and blended */}
       <div 
-        className='absolute inset-0 z-0 opacity-30 mix-blend-lighten bg-no-repeat bg-cover bg-center'
+        className='absolute inset-0 z-0 opacity-[0.05] mix-blend-multiply bg-no-repeat bg-cover bg-center'
         style={{ backgroundImage: `url(${banner})` }}
       />
       
-      {/* Dark & Cosmic Gradients Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#030014]/50 via-[#030014]/80 to-[#030014] z-10" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.15)_0%,transparent_60%)] z-10" />
-      
-      {/* Animated Glowing Ambient Blobs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse z-10" style={{ animationDuration: '8s' }} />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse z-10" style={{ animationDuration: '12s' }} />
+      {/* Cool Gray-Blue Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#f4f5f8]/10 via-[#f4f5f8]/65 to-[#f4f5f8] z-10" />
       
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 z-10" />
 
       {/* Content */}
       <div className='relative z-20 max-w-4xl mx-auto flex flex-col items-center gap-6 px-4'>
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs sm:text-sm font-medium tracking-wide uppercase mb-2 shadow-[0_0_15px_rgba(99,102,241,0.15)]">
-          ✨ Era Baru Digitalisasi Bisnis
-        </div>
-        
-        <h1 className='text-sm sm:text-lg font-bold tracking-widest text-cyan-400 uppercase'>
+        <span className='text-xs font-bold tracking-widest text-slate-500 uppercase bg-white px-3.5 py-1.5 rounded-full border border-slate-200 shadow-sm'>
           Kreatif • Inovatif • Terpercaya
-        </h1>
+        </span>
         
-        <h2 className='text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl tracking-tight'>
+        <h2 className='text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.15] max-w-3xl tracking-tight'>
           Mitra Terbaik Dalam Pengembangan{" "}
-          <span className="text-gradient-cyan-indigo font-black">Website Bisnis</span> Anda
+          <span className="text-gradient-blue font-black">Website Bisnis</span> Anda
         </h2>
         
-        <p className='text-base sm:text-lg text-zinc-400 max-w-2xl mt-2 leading-relaxed'>
+        <p className='text-base sm:text-lg text-slate-600 max-w-2xl mt-2 leading-relaxed'>
           Kami membangun platform digital modern, cepat, dan responsif untuk membantu usaha Anda tumbuh lebih jauh di era internet.
         </p>
         
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <Button 
             link='https://wa.me/6287708899020?text=Halo Fakanet, saya mau bikin website untuk usaha saya' 
-            className="px-8 py-6 text-base sm:text-lg rounded-2xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:from-cyan-400 hover:via-indigo-400 hover:to-purple-500 shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:shadow-[0_0_40px_rgba(6,182,212,0.6)] group"
+            className="w-full sm:w-auto px-6 py-5"
           >
             <span>Hubungi Kami</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </Button>
+          <Button 
+            link='#kenapakami'
+            variant="outline"
+            className="w-full sm:w-auto px-6 py-5"
+          >
+            <span>Lihat Layanan</span>
+          </Button>
+        </div>
+
+        {/* Tech Stack / Trust Section */}
+        <div className="mt-20 border-t border-slate-200 pt-10 w-full max-w-2xl">
+          <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">Teknologi & Standar Industri</p>
+          <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <span className="text-xs font-bold tracking-tight text-slate-600 uppercase">React.js</span>
+            <span className="text-slate-300">•</span>
+            <span className="text-xs font-bold tracking-tight text-slate-600 uppercase">Next.js</span>
+            <span className="text-slate-300">•</span>
+            <span className="text-xs font-bold tracking-tight text-slate-600 uppercase">Tailwind CSS</span>
+            <span className="text-slate-300">•</span>
+            <span className="text-xs font-bold tracking-tight text-slate-600 uppercase">Node.js</span>
+            <span className="text-slate-300">•</span>
+            <span className="text-xs font-bold tracking-tight text-slate-600 uppercase">REST APIs</span>
+          </div>
         </div>
       </div>
+
+      {/* Elegant 1px divider at the bottom of the section */}
+      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-200/80 to-transparent z-20" />
     </div>
   )
 }
+
+
 

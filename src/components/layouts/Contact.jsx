@@ -22,38 +22,34 @@ export const Contact = () => {
   );
 
   return (
-    <section id='contact' className='relative py-28 px-6 sm:px-10 max-w-6xl mx-auto w-full overflow-hidden bg-[#030014]'>
-      {/* Background ambient glow */}
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-500/5 rounded-full blur-3xl -z-10" />
-      
-      <div className="flex flex-col gap-4 mb-16 text-center sm:text-left">
-        <div className="text-sm font-bold text-indigo-400 uppercase tracking-widest">Kontak & Lokasi</div>
-        <h3 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Hubungi Kami Untuk <span className="text-gradient-cyan-indigo">Kolaborasi</span>
+    <section id='contact' className='relative py-28 px-6 sm:px-10 max-w-6xl mx-auto w-full overflow-hidden'>
+      <div className="flex flex-col gap-3 mb-16 text-center sm:text-left">
+        <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">Kontak & Lokasi</span>
+        <h3 className="text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight">
+          Hubungi Kami Untuk Kolaborasi
         </h3>
-        <p className="text-zinc-400 max-w-xl text-sm sm:text-base">
+        <p className="text-slate-500 max-w-xl text-sm sm:text-base leading-relaxed">
           Wujudkan website impian Anda bersama Joglo Digital. Konsultasikan kebutuhan proyek Anda sekarang secara gratis!
         </p>
       </div>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch'>
         {/* Left Column: Location Card */}
-        <div className='glass-panel p-8 rounded-2xl flex flex-col justify-between gap-6'>
+        <div className='card-panel p-8 rounded-xl flex flex-col justify-between gap-6'>
           <div>
-            <h4 className='text-lg font-bold text-white mb-3 flex items-center gap-2'>
-              <span className="text-cyan-400">{mapIcon}</span> Kantor Kami
+            <h4 className='text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2'>
+              <span className="text-blue-500">{mapIcon}</span> Kantor Kami
             </h4>
-            <p className='text-zinc-400 text-sm sm:text-base leading-relaxed'>
+            <p className='text-slate-500 text-sm sm:text-base leading-relaxed'>
               Madugondo, Sitimulyo, Kec. Piyungan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55792
             </p>
           </div>
           
-          {/* Futuristic decorative map container */}
-          <div className="w-full h-44 rounded-xl border border-white/5 bg-white/[0.02] flex items-center justify-center overflow-hidden relative group">
-            <div className="absolute inset-0 bg-grid-pattern opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
-            <div className="absolute w-8 h-8 bg-cyan-500/10 rounded-full flex items-center justify-center animate-ping" style={{ animationDuration: '3s' }} />
-            <div className="absolute w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_12px_rgba(6,182,212,1)]" />
-            <span className="relative z-10 text-xs font-semibold tracking-wider text-zinc-400 uppercase bg-[#030014]/85 px-3 py-1.5 rounded-lg border border-white/10 mt-16 shadow-lg">
+          {/* Decorative map container */}
+          <div className="w-full h-44 rounded-lg border border-slate-200 bg-slate-50 flex items-center justify-center overflow-hidden relative group">
+            <div className="absolute inset-0 bg-grid-pattern opacity-40" />
+            <div className="absolute w-2.5 h-2.5 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)] animate-pulse" />
+            <span className="relative z-10 text-xs font-medium tracking-wide text-slate-600 bg-white px-3 py-1.5 rounded-lg border border-slate-200 mt-16 shadow-sm">
               Bantul, Yogyakarta
             </span>
           </div>
@@ -61,8 +57,8 @@ export const Contact = () => {
 
         {/* Right Column: Contact Channels */}
         <div className='flex flex-col gap-4 justify-between h-full'>
-          <div className="glass-panel p-8 rounded-2xl flex-1 flex flex-col gap-6">
-            <h4 className='text-lg font-bold text-white mb-2 flex items-center gap-2'>
+          <div className="card-panel p-8 rounded-xl flex-1 flex flex-col gap-6">
+            <h4 className='text-lg font-semibold text-slate-800 mb-2 flex items-center gap-2'>
               Hubungi Secara Langsung
             </h4>
             <div className='flex flex-col gap-4'>

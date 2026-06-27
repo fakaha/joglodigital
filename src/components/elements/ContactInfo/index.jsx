@@ -3,21 +3,23 @@ export const ContactInfo = (props) => {
     return (
         <div 
             onClick={() => window.open(link, 'blank')} 
-            className="flex items-center gap-4 py-3 px-5 rounded-xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] hover:border-cyan-500/30 hover:cursor-pointer transition-all duration-300 group shadow-lg"
+            className="flex items-center gap-4 py-3 px-5 rounded-xl border border-slate-200 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm hover:cursor-pointer transition-all duration-200 group"
         >
             {icon && (
-                <div className="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center border border-indigo-500/20 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/30 transition-all duration-300">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center border border-blue-100/50 group-hover:border-blue-200 group-hover:bg-blue-100/50 transition-colors duration-200">
                     {typeof icon === 'string' ? (
-                        <img className="w-[20px] filter brightness-110 group-hover:scale-110 transition-transform duration-300" src={icon} alt="icon" />
+                        <img className="w-[18px] opacity-80 group-hover:opacity-100 transition-opacity duration-200" src={icon} alt="icon" />
                     ) : (
-                        <div className="w-5 h-5 text-indigo-400 group-hover:text-cyan-400 transition-colors duration-300 flex items-center justify-center">
+                        <div className="w-5 h-5 text-blue-600 group-hover:text-blue-700 transition-colors duration-200 flex items-center justify-center">
                             {icon}
                         </div>
                     )}
                 </div>
             )}
-            <p className="text-zinc-300 group-hover:text-white transition-colors duration-300 font-medium text-sm sm:text-base">{contact}</p>
+            <p className="text-slate-600 group-hover:text-slate-900 transition-colors duration-200 font-medium text-sm sm:text-base">{contact}</p>
         </div>
     )
 }
+
+
 

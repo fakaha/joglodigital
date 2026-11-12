@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Card = (props) => {
-    const { title, description, image, icon } = props
+    const { title, description, icon } = props
     return (
         <div className="group relative w-full p-6 rounded-xl card-panel card-panel-hover overflow-hidden">
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 sm:mb-0">

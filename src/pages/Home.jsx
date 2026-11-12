@@ -4,6 +4,7 @@ import { Hero } from '../components/layouts/Hero'
 import { Services } from '../components/layouts/Services'
 import { Contact } from '../components/layouts/Contact'
 import { Footer } from '../components/layouts/Footer'
+import { PortfolioSection } from '../components/layouts/PortfolioSection'
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
         <Navbar/>
         <Hero/>
         <Services/>
+        <PortfolioSection/>
         <Contact/>
         <Footer/>
     </div>

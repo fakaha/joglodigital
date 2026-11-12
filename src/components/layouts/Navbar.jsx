@@ -21,10 +21,15 @@ export const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200 py-1.5 px-3 rounded-md hover:bg-stone-200/60">
-                Kontak
-              </a>
-            </li>
+                          <a href="#contact" className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200 py-1.5 px-3 rounded-md hover:bg-stone-200/60">
+                            Kontak
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#portfolio" className="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors duration-200 py-1.5 px-3 rounded-md hover:bg-stone-200/60">
+                            Portofolio
+                          </a>
+                        </li>
           </ul>
         </nav>
       </div>
